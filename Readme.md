@@ -264,22 +264,6 @@ The same method name is used with different parameters.
 
 ---
 
-# How To Run The Program
-
-## Step 1: Compile the project
-
-```bash
-javac *.java
-```
-
-## Step 2: Run the program
-
-```bash
-java Main
-```
-
----
-
 # Challenges Faced
 
 Some challenges faced while developing this project were:

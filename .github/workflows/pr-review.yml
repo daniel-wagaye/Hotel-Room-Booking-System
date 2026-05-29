@@ -22,24 +22,28 @@
             java-version: '21'
             distribution: 'temurin'
 
-        # 3. Check if Java files exist inside src
+        # 3. Check if Java files exist
         - name: Check Java Files
           run: |
             echo "Checking Java files..."
             
             if ls src/*.java 1> /dev/null 2>&1; then
-              echo "Java files found."
+              echo "Java files found inside src/ directory."
             else
-              echo "No Java files found!"
+              echo "Error: No Java files found!"
               exit 1
             fi
 
-        # 4. Compile Java project
+        # 4. Compile Java Project
         - name: Compile Java Project
           run: |
-            echo "Compiling Java files..."
+            echo "Compiling Java project..."
             
-            javac src/*.java
+            # Create output folder for compiled files
+            mkdir bin
+            
+            # Compile project
+            javac -sourcepath src -d bin src/Main.java
             
             echo "Compilation successful!"
 
@@ -47,4 +51,4 @@
         - name: Automated Review
           run: |
             echo "Automated PR review completed successfully."
-            echo "No compilation errors found."
+            echo "No compilation or dependency errors found."

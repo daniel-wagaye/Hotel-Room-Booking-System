@@ -41,6 +41,6 @@ public class Booking {
         System.out.println("Room No    : " + room.getRoomNumber());
         System.out.println("Room Type  : " + room.getRoomType());
         System.out.println("Nights     : " + nights);
-        System.out.println("Total Price: " + totalPrice);
+        System.out.println("Total Price: " + totalPrice + " ETB");
     }
 }

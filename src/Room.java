@@ -49,14 +49,14 @@ public class Room {
         System.out.println(
                 "Room " + roomNumber +
                         " - " + getRoomType() +
-                        " - Price: " + pricePerNight + "ETB"
+                        " - Price: " + pricePerNight + " ETB"
         );
     }
 
     public void displayInfo() {
         System.out.println("Room Type : " + getRoomType());
         System.out.println("Room No   : " + roomNumber);
-        System.out.println("Price     : " + pricePerNight + "ETB");
+        System.out.println("Price     : " + pricePerNight + " ETB");
 
         if (available) {
             System.out.println("Available : Yes");

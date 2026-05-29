@@ -67,8 +67,8 @@ public class Hotel {
 
     public void showRoomTypes() {
         System.out.println("\n===== ROOM TYPES =====");
-        System.out.println("1. Standard Room - " + standardPrice + " per night");
-        System.out.println("2. Deluxe Room   - " + deluxePrice + " per night");
+        System.out.println("1. Standard Room - " + standardPrice + " ETB per night");
+        System.out.println("2. Deluxe Room   - " + deluxePrice + " ETB per night");
     }
 
     public boolean updateRoomPrice(int typeChoice, double newPrice) {

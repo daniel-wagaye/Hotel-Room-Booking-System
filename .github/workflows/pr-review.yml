@@ -1,9 +1,12 @@
   name: Automated PR Review Pipeline
 
-  on:
-    pull_request:
-      branches:
-        - main
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 
   jobs:
     review-and-test:
